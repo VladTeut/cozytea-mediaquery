@@ -1,0 +1,155 @@
+html {
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    color: seashell;
+}
+header {
+    width: 1200px;
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    height: 50px;
+    padding-left: 10px;
+}
+nav {
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+nav a {
+    padding: 5px;
+}
+#mission {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    width: 1200px;
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+}
+#mission .mission {
+    background-color: black;
+    width: 100%;
+}
+#flex-container {
+    width: 1000px;
+    margin: auto;
+}
+
+#container-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+.locations {
+    width: 1200px;
+    height: 500px;
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
+}
+.locations h2 {
+    padding-top: 20px;
+}
+#flex-locations {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    opacity: 1;
+    display: inline-block;
+    align-items: center;
+    margin: 40px;
+}
+.footer {
+    height: 200px;
+}
+.copyright {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+/* Your existing styles for larger screens */
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 10px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header img {
+        height: 40px; /* Adjust the height for smaller screens */
+        padding-left: 3px; /* Adjust the padding for smaller screens */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1px; /* Add space between nav items */
+    }
+
+    nav a {
+        margin-bottom: 10px; /* Add space between nav items */
+    }
+
+    #mission,
+    #mission .mission,
+    #flex-container,
+    #container-box,
+    .item,
+    .locations,
+    #flex-locations {
+        width: 100%;
+        margin: 0;
+    }
+
+    .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .locations {
+        height: auto;
+    }
+
+    #flex-locations {
+        width: 100%;
+        height: auto;
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .copyright {
+        padding-left: 10px; /* Adjust padding for smaller screens */
+        align-items: center; /* Center text in the copyright section */
+    }
+}
